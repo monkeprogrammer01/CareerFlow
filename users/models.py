@@ -26,12 +26,23 @@ class UserManager(BaseUserManager):
 
 class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique=True)
-
-    is_employer = models.BooleanField()
+    is_staff = models.BooleanField(default=False)
+    is_employer = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
     name = models.TextField()
     user_image = models.ImageField()
     location = models.TextField()
-
+    objects = UserManager()
     USERNAME_FIELD = "email"
+
+
+class Resume(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='resumes')
+    title = models.CharField(max_length=255)
+    experience = models.TextField()
+    skills = models.TextField()
+    education = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+
 
