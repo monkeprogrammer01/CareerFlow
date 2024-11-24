@@ -1,0 +1,38 @@
+/* VacancyFilter.css */
+
+/* Container for filter section */
+.vacancy-filter {
+  width: 250px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 100px;
+  left: 0;
+  height: calc(100vh - 100px);
+}
+
+/* Title for the chapters */
+.vacancy-filter h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Filter section styles */
+.vacancy-filter .filter-section {
+  margin-bottom: 30px;
+}
+
+.vacancy-filter .filter-section select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Option styling */
+.vacancy-filter .filter-section option {
+  padding: 10px;
+}

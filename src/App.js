@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './features/Login/login.js'
 import Registration from './features/Registration/registration.js'
+import MainPage from './features/MainPage/MainPage.js';
+import PostJob from './features/PostJob/postjob.js'
 
 const JobSearch = () => {
   const navigate = useNavigate();
@@ -14,7 +16,7 @@ const JobSearch = () => {
   };
   return <>
 
-    <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px', maxWidth: '1300px', margin: 'auto' }}>
+    <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px',  margin: '0 auto' }}>
       {/* Navbar */}
       <header
         style={{
@@ -24,6 +26,7 @@ const JobSearch = () => {
           marginBottom: '50px',
           borderBottom: '1px solid #ddd',
           paddingBottom: '10px',
+          width: '100%'
         }}
       >
         {/* Navbar Menu */}
@@ -38,8 +41,8 @@ const JobSearch = () => {
           <a href="/post-job" style={{ color: '#333', textDecoration: 'none' }}>
             Post a Job
           </a>
-          <a href="/testimonials" style={{ color: '#333', textDecoration: 'none' }}>
-            Testimonials
+          <a href="/testimonials" style={{ color: '#333', textDecoration: 'none' }}> 
+          
           </a>
         </nav>
 
@@ -137,6 +140,8 @@ const App = () => {
         <Route path="/" element={<JobSearch />} />
         <Route path="/user/login" element={<Login />} />
         <Route path="/user/registration" element={<Registration />} />
+        <Route path="/find-job" element={<MainPage />} />
+        <Route path="/post-job" element={<PostJob />} />
       </Routes>
     </Router>
   );

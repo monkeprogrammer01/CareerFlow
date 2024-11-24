@@ -1,0 +1,87 @@
+
+.main-page {
+  font-family: Arial, sans-serif;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+}
+
+.filter-section {
+  width: 25%;
+  padding-right: 20px;
+}
+
+.vacancy-section {
+  width: 70%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.navbar-left img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-center .search-bar {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.navbar-right h1 {
+  margin-right:20px;
+  font-size: 24px;
+}
+
+.vacancy-filter {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.vacancy-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vacancy-card {
+  width: 45%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.vacancy-card h3 {
+  margin: 0;
+}
+
+.vacancy-card p {
+  margin: 5px 0;
+}

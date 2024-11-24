@@ -1,0 +1,71 @@
+/* Navbar.css */
+
+/* Navbar container */
+.navbar {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f50057;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Left section (profile image) */
+.navbar-left {
+  display: block;
+  align-items: center;
+}
+
+/* Profile image */
+.navbar-left .profile-pic {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* Center section (search bar) */
+.navbar-center {
+  flex-grow: 1;
+  display: block;
+  justify-content: center;
+}
+
+/* Search bar */
+.navbar-center {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+.search-bar {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+/* Right section (title) */
+.navbar-right {
+  display: block;
+  align-items: center;
+}
+
+/* CareerFlow title */
+.navbar-right h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Hover effect for the search bar */
+.navbar-center .search-bar:focus {
+  border: 2px solid #4CAF50;
+}
