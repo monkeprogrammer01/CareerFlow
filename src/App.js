@@ -5,6 +5,7 @@ import Login from './features/Login/login.js'
 import Registration from './features/Registration/registration.js'
 import MainPage from './features/MainPage/MainPage.js';
 import PostJob from './features/PostJob/postjob.js'
+import Profile from './features/Profile/profile.js'
 
 const JobSearch = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ const JobSearch = () => {
   };
   return <>
 
-    <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px',  margin: '0 auto' }}>
+    <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px',  margin: '0 auto', width: '100%' }}>
       {/* Navbar */}
       <header
         style={{
@@ -140,6 +141,7 @@ const App = () => {
         <Route path="/" element={<JobSearch />} />
         <Route path="/user/login" element={<Login />} />
         <Route path="/user/registration" element={<Registration />} />
+        <Route path="/user" element={<Profile />} />
         <Route path="/find-job" element={<MainPage />} />
         <Route path="/post-job" element={<PostJob />} />
       </Routes>
@@ -148,4 +150,6 @@ const App = () => {
 };
 
 export default App;
+
+
 

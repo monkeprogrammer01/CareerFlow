@@ -2,7 +2,7 @@
 
 /* Container for vacancy list */
 .vacancy-list {
-  margin-left: 170px; /* To leave space for the filter */
+  margin-left: 30%; /* To leave space for the filter */
   padding: 20px;
   display: flex;
   flex-direction: column;
